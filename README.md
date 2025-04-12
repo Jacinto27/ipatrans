@@ -1,4 +1,4 @@
-CLI app to ipa translate words into IPA. 
+CLI app to transliterate words into IPA. 
 
 obligatory arguments:
 --file/--text: File or text to be transliterated, text should be a csv even if pasted directly on the terminal
