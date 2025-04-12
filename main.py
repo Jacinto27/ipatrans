@@ -118,7 +118,7 @@ def export_results(results, output_format, output_path):
             raise ValueError("Unsupported output format.")
 
 def main():
-    parser = argparse.ArgumentParser(description="Multilingual IPA Transcription Tool using Epitran")
+    parser = argparse.ArgumentParser(description="Multilingual IPA Transcription Tool")
     parser.add_argument("--file", help="Path to input .txt or .csv file in utf-8 encoding")
     parser.add_argument("--text", help="Direct comma-separated word input, input between \"\",")
     parser.add_argument("--lang", required=True, help="Language for IPA (e.g., english, french, german)")
@@ -145,7 +145,6 @@ def main():
         output_path = f"{args.out}.{output_format}"
 
         export_results(results, output_format, output_path)
-        print(results)
         print(f"Processed {len(results)} words. Output saved to {output_path}")
 
     except Exception as e:
