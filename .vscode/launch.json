@@ -3,7 +3,8 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [{
+    "configurations": [
+      {
         "name": "IPA Debug (CSV)",
         "type": "python",
         "request": "launch",
@@ -11,8 +12,8 @@
         "justMyCode": false,
         "console": "integratedTerminal",
         "args": [
-          "--text", "schwein,schaffe,alles",
-          "--lang", "german",
+          "--text", "schwein, schaffe, alles",
+          "--lang", "spanish",
           "--csv"
         ]
       }]
